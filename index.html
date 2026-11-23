@@ -920,6 +920,13 @@
   @media (max-width: 900px) {
     nav { padding: 16px 24px; }
     .nav-links { gap: 16px; }
+  }
+  @media (max-width: 680px) {
+    nav { flex-wrap: wrap; justify-content: center; gap: 12px; padding: 14px 18px; }
+    .nav-brand { white-space: nowrap; width: 100%; text-align: center; }
+    .nav-links { width: 100%; justify-content: center; flex-wrap: wrap; gap: 14px 18px; }
+    .nav-links a { font-size: 14px; }
+    .nav-cta { padding: 9px 18px; font-size: 13px; }
     section, .about, .resource, .featured, .writing, .community { padding: 70px 32px; }
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-left { padding: 60px 32px; }
@@ -947,6 +954,7 @@
   <a href="#" class="nav-brand">Sawubona <span>Trail</span></a>
   <div class="nav-links">
     <a href="#about">About</a>
+    <a href="framework.html">Framework</a>
     <a href="#writing">Writing</a>
     <a href="https://sawubonatrail.substack.com/" target="_blank">Read</a>
     <a href="#join" class="nav-cta">Join the Trail</a>
@@ -1034,6 +1042,36 @@
       </a>
     </div>
   </div>
+</section>
+
+<!-- FRAMEWORK POINTER -->
+<style>
+  .fw-promo { background: var(--green); padding: 76px 40px; text-align: center; }
+  .fw-promo .section-label { color: var(--sand); }
+  .fw-promo h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(27px, 3vw, 40px); font-weight: 700; line-height: 1.22;
+    color: var(--cream); margin-bottom: 20px; letter-spacing: -0.3px;
+  }
+  .fw-promo h2 em { font-style: italic; color: var(--sand); }
+  .fw-promo p { font-size: 17px; line-height: 1.75; color: rgba(253,248,242,0.8); max-width: 580px; margin: 0 auto 32px; }
+  .fw-promo a.fw-btn {
+    display: inline-block; font-size: 15px; font-weight: 500; letter-spacing: .3px;
+    padding: 15px 34px; border-radius: 999px; text-decoration: none;
+    background: var(--terracotta); color: var(--cream); transition: background .2s;
+  }
+  .fw-promo a.fw-btn:hover { background: var(--terracotta-light); }
+  @media (max-width: 720px) { .fw-promo { padding: 56px 22px; } }
+</style>
+<section class="fw-promo">
+  <span class="section-label">The Framework</span>
+  <h2>Competence doesn't travel.<br><em>Interpretation</em> does.</h2>
+  <p>
+    Everything here rests on one idea — that being capable and being recognised as capable
+    are two different things, and that the gap between them is where most careers are quietly
+    decided. Now that gap is being automated.
+  </p>
+  <a href="framework.html" class="fw-btn">Read the framework →</a>
 </section>
 
 <!-- WRITING -->
